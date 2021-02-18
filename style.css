@@ -1,3 +1,95 @@
+
+/*modification ajouter sur les div déja présentent*/
+
+#flexbox{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.titre-folio{
+    margin-bottom: 30px;
+}
+.mobile-size{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:768px){
+.mobile-size{
+    width: 50%;
+}
+}
+
+@media(max-width:550px){
+    .mobile-size{
+        width: 90%;
+    }
+    }
+.h2clr{
+    z-index: 3;
+    color: white;
+}
+
+.copy{
+    font-size: 10px;
+    margin: 0px;
+    position: relative;
+    top: 20px;
+}
+
+@media(max-width:400px){
+    .flexcol{
+        width: 100%;
+    }
+    
+    #form_1{
+        width: 99%;
+    }
+}
+.adress{
+    margin-top: 50px;
+}
+
+.flexcol{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 90%;
+    text-align: left;
+    padding: 30px;
+    margin: auto;
+}
+
+#form_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 55%;
+   margin: auto;
+   border: rgba(0, 0, 0, 0.623) solid 2px;
+   border-radius: 1%;
+   padding: 30px;
+}
+
+@media(max-width:768px){
+    #form_1{
+        width: 80%;
+    }
+}
+
+
+
+.form-text{
+    position: relative;
+    top: 60px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -31,7 +123,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    padding: 0px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -90,10 +182,6 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
 
 .b-parallax {
     background-attachment: fixed;
@@ -439,6 +527,13 @@ nav .caret {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+.large{
+    margin: auto;
+    margin-bottom: 12px;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
 .mg-lg {
     margin-top: 10px;
@@ -655,7 +750,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    width: 100%;
 }
 
 .hero-bloc-text {
@@ -677,7 +772,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -702,6 +797,16 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+   
+}
+
+@media(max-width:768px){
+    .social{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-content: center;
+    }
 }
 
 h2 {
@@ -757,13 +862,19 @@ h4 {
     padding: 40px 40px 40px 40px;
 }
 
+@media(max-width:400px){
+    .black-background{
+    padding:40px 5px 40px 5px;
+    }
+}
+
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
 }
 
 .bgc-white {
-    background-color: #FFFFFF;
+    background-color:  #fffff;
 }
 
 .bgc-dark-slate-blue {
@@ -775,7 +886,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffffff!important;
 }
 
 .btn-atomic-tangerine {
@@ -821,14 +932,19 @@ h4 {
     background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
+
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
+.texture-paper::before{
+background: url(img/texture-paper.png);
+    background-size: 280px 280px;
+}
+}
 @media (max-width: 1024px) {
     .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0px;
     }
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
