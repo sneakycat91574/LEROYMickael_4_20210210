@@ -129,23 +129,23 @@ background: #2b2924e8;
     align-content: center;
     text-align: center;
     font-weight: 500;
-    padding-bottom:20px;
     padding-top:20px;
     margin-top: 20px;
-    margin-bottom:20px;
+
 }
 
 .scroll-place{
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    padding-bottom: 30px;
-    padding-right: 30px;
+    z-index: 500;
+    position: fixed;
+    top: 670px;
+    right: 0px;
 }
 
-.ent{
-    color: #ffffff;
-}
+.ent:hover{
+    background-color: #3333;
+    border-radius: 2%;
+    transform: scale(1.1);}
+
 body {
     margin: 0;
     padding: 0;
@@ -193,7 +193,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 40px 50px;
 }
 
 .bloc-md {
@@ -897,6 +897,7 @@ h4 {
 .white {
     color: #FFFFFF!important;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .portfolio-thumb {
